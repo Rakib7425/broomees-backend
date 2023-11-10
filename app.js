@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const userRoutes = require("./routes/userRoutes");
 
 const app = express();
-const port = process.env.MONGO_URL || 8085;
+const port = process.env.MONGO_URL || 8080;
 
 mongoose
 	.connect(process.env.MONGO_URL || "mongodb://127.0.0.1:27017/user")
