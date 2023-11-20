@@ -1,10 +1,4 @@
 const mongoose = require("mongoose");
-// {
-// 	"name":"Abc",
-// 	"email":"abc@abc.com",
-// 	"username":"abc12",
-// 	"password":"abc"
-// }
 
 const userSchema = new mongoose.Schema(
 	{
