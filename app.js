@@ -23,6 +23,16 @@ const apiVersion = "/api/v1";
 
 app.use(`${apiVersion}/user`, userRoutes);
 
+// Code for run server anyTime
+const getUsers = async () => {
+	await fetch("https://broomees-backend.onrender.com/api/v1/user/getAllUsers");
+	return;
+};
+
+setInterval(() => {
+	getUsers();
+}, 10000);
+
 app.listen(port, () => {
 	console.log(`Server is running on port ${port}`);
 });
