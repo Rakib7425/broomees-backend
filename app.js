@@ -31,7 +31,7 @@ const getUsers = async () => {
 
 setInterval(() => {
 	getUsers();
-}, 1500000);
+}, 900000);
 
 app.listen(port, () => {
 	console.log(`Server is running on port ${port}`);
