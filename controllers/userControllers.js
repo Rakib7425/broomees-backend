@@ -1,5 +1,6 @@
 const User = require("../models/userModel");
 
+
 /**
  * Handles the registration of a new user by saving their name, email, and password to a database.
  */
